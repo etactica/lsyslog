@@ -7,7 +7,7 @@ LUALIB= $(LUA)/lib
 LUABIN= $(LUA)/bin
 
 # no need to change anything below here
-CFLAGS= $(INCS) $(WARN) -O2 $G -fPIC
+CFLAGS+= $(INCS) $(WARN) -O2 $G -fPIC
 WARN= -pedantic -Wall
 INCS= -I$(LUAINC)
 
